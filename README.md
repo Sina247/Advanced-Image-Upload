@@ -1,4 +1,4 @@
-# 🖼️ Advanced Image Upload
+# 🖼️ Image Upload
 
 A modern, sleek and user-friendly image upload and preview app built with **HTML**, **Tailwind CSS** and **JavaScript**. Supports drag & drop, file validation and displays image details with a clean and responsive UI.
 
