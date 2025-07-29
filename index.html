@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Advanced Image Upload</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body class="bg-gray-50 flex items-center justify-center min-h-screen p-6 font-sans">
+		<div class="bg-white p-8 rounded-xl shadow-xl max-w-lg w-full">
+			<h1 class="text-3xl font-extrabold mb-6 text-center text-gray-800">Advanced Image Upload</h1>
+
+			<div id="dropZone" tabindex="0" class="border-4 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center cursor-pointer py-12 px-6 focus:outline-none focus:ring-4 focus:ring-blue-400 focus:border-blue-400 select-none text-gray-500 hover:border-blue-500 hover:text-blue-600">
+				<svg class="w-16 h-16 mb-4 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+					<polyline points="12 12 12 3 8 7 16 7" />
+				</svg>
+
+				<p class="mb-2 font-semibold">Click or drag & drop a file here</p>
+
+				<p class="text-sm">Only images (jpg, png, gif) are accepted</p>
+
+				<input type="file" id="fileInput" accept="image/*" class="hidden" />
+			</div>
+
+			<div id="previewContainer" class="mt-8 min-h-[200px] flex flex-col items-center justify-center rounded-xl border border-gray-300 bg-gray-50 p-4">
+				<p class="text-gray-400">No image selected</p>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
